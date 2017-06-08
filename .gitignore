@@ -4,6 +4,9 @@
 *.so
 *.dylib
 
+# MAC OS X(Go executable)
+main
+
 # Test binary, build with `go test -c`
 *.test
 
