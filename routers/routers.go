@@ -20,7 +20,10 @@ func Route() {
 	iris.Post("/products/create/", controllers.CreateProduct)
 
 	// iris.Put("/products/update/", UpdateProduct)
-	// iris.Post("/login/", Login)
+
+	/* To login */
+	iris.Post("/login/", controllers.Login)
+
 	// iris.Post("/register/", Register)
 	// iris.Get("/users/", Users)
 	// iris.Get("/users/:id", User)
