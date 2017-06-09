@@ -41,11 +41,7 @@ func Products(ctx *iris.Context) {
 			products = append(products, Product{id , title, image, price, stoctkStatus, tagetUrl, merchant})
 		}
 		
-		// productsBytes, _ := json.Marshal(&products)
-		
-		// w.Write(productsBytes)
-
 		fmt.Println("Returning JSON representation of all products")
 		ctx.JSON(iris.StatusOK, products)
-		db.Close()
+		// db.Close()
 }

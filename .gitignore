@@ -3,7 +3,7 @@
 *.dll
 *.so
 *.dylib
-
+main
 # MAC OS X(Go executable)
 main
 

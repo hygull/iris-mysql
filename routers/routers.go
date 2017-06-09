@@ -13,10 +13,17 @@ func Route() {
 	/* To get all the products */
 	iris.Get("/products/", controllers.Products)
 
-	// iris.Get("/products/:id", Product)
-	// iris.Post("/products/create/", CreateProduct)
+	/* To get a single product */
+	iris.Get("/products/:id", controllers.Product)
+	
+	/* To create a product */
+	iris.Post("/products/create/", controllers.CreateProduct)
+
 	// iris.Put("/products/update/", UpdateProduct)
 	// iris.Post("/login/", Login)
+	// iris.Post("/register/", Register)
+	// iris.Get("/users/", Users)
+	// iris.Get("/users/:id", User)
 
 	iris.Listen(":" + conf.ServerPort)
 

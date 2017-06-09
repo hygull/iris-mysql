@@ -14,7 +14,7 @@ import (
 var RootDir = "restiris"
 
 //Port number of web service on which it will listen for requests ...
-var ServerPort = "8000"
+var ServerPort = "8080"
 
 /******************* Database credentials ******************************************/
 //Name of the database used

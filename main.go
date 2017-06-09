@@ -32,4 +32,6 @@ func main() {
 	conf.DbObj = db
 
 	routers.Route()
+
+	db.Close()	
 }
