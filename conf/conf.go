@@ -2,8 +2,8 @@
 package conf
 
 import (
-	_"github.com/go-sql-driver/mysql"	
 	"database/sql"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 //Name of root directory inside $GOPATH/src/  (in MAC)    or  %GOPATH%\src\ (in windows)

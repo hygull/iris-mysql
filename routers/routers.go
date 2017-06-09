@@ -15,7 +15,7 @@ func Route() {
 
 	/* To get a single product */
 	iris.Get("/products/:id", controllers.Product)
-	
+
 	/* To create a product */
 	iris.Post("/products/create/", controllers.CreateProduct)
 
